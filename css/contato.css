@@ -1,0 +1,53 @@
+.contato{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        "contatos social links";
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato-container{
+    grid-area: contatos;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contato-title{
+    font-size: 1.5rem;
+}
+.contato-item{
+    display: flex;
+    gap: 24px;
+}
+.contato-item__icon{
+    font-size: 1.25rem;
+}
+.social-container{
+    grid-area: social;
+    display: flex;
+    gap: 32px;
+    font-size: 1.5rem;
+}
+.social{
+    width: 64px;
+    height: 64px;
+    background-color: var(--icon-color);
+    display: grid;
+    place-content: center;
+}
+
+.links-container{
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: right;
+}
+
+.links-title{
+    font-size: 1.5rem;
+}

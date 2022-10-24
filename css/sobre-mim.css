@@ -20,9 +20,53 @@
 }
 .description{
     grid-area: description;
-    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
 }
+.description__title{
+    font-size: 3rem;
+    color: var(--primary-color)
+}
+.description__text{
+    width: 85%;
+    font-size: 1.5rem;
+    line-height: 150%;
+}
+
 .skills{
     grid-area: skills;
-    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skills__title{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.skills__icons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.skills__icon{
+    width: 150px;
+    height: 150px;
+    background-color: var(--icon-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.skills__icon i{
+    font-size: 2.5rem;
+}
+
+.skills__icon span{
+    font-size: 1rem;
+    font-weight: 700;
 }

@@ -1,5 +1,6 @@
 :root{
     --primary-color: #FEDC00;
+    --primary-color-light: #FEDC0055;
     --icon-color: #252525;
 }
 html{
@@ -31,24 +32,39 @@ main{
     align-items: center;
 }
 
+.voltar{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    right: 16px;
+    bottom: 16px;
+    display: grid;
+    place-content: center;
+    font-size: 1rem;
+    font-weight: 100;
+    transition: all .5s;
+    color: var(--primary-color);
+    background-color: var(--primary-color-light);
+}
+
+.voltar:hover{
+    background-color: var(--primary-color);
+    color:#000;
+}
+
 section{
     height: 100vh;
-}
-
-
-.projetos{
-    background-color: lightgreen;
-    width: 100%;
-}
-.contato{
-    background-color: plum;
-    width: 100%;
 }
 
 footer{
     grid-area: content;
     place-self: end center;
-    height: 100px;
+    height: 50px;
     width: 100%;
-    background-color: #0005;
+    display: grid;
+    place-content: center;
+    border-top: 2px solid #FFF;
+    font-size: .75rem;
 }
